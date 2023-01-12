@@ -18,8 +18,7 @@ class MyFirstClass:
         self.move(x, y)
 
     def reset(self):
-        self.x = 0
-        self.y = 0
+        self.move(0, 0)
 
     def move(self, x: float, y: float) -> None:
         self.x = x
@@ -31,20 +30,12 @@ class MyFirstClass:
 
 a = MyFirstClass(3, 5)
 b = MyFirstClass(0, 5)
+print(a.x)
 
-# print(a)
-# print(b)
-
-a.x = 5
-a.y = 4
-b.x = 3
-b.y = 6
-
-b.reset()
-
-print(a.x, a.y)
-print(b.x, b.y)
-
+# a.x = 5
+# a.y = 4
+# b.x = 3
+# b.y = 6
 a.reset()
 b.move(5, 0)
 print(b.calculate(a))
