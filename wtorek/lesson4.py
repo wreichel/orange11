@@ -17,3 +17,12 @@ primes = [0, 0, 1, 1, 0, 1, 0, 1]
 numbers = ['zero', 'jeden', 'dwa', 'trzy', 'cztery', 'pięć']
 
 print(list(itertools.compress(numbers, primes)))
+
+print(list(itertools.islice(itertools.count(), 10)))
+print(list(itertools.islice(itertools.count(), 5, 10, 2)))
+print(list(itertools.islice(itertools.count(10, 2.5), 5)))
+words = ['aa', 'ab', 'ba', 'bb', 'ca', 'cb', 'cc']
+
+getter = operator.itemgetter(0)
+for group, items in itertools.groupby(words, key=getter):
+    print(f'group:{group}, items:{list(items)}')
