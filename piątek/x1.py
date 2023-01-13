@@ -28,7 +28,13 @@ root = tree.getroot()
 # print(b2tf.attrib)
 # tree.write('movies.xml')
 
-yr92 = root.find("./genre/decade/movie/[year='1992']")
-yr92.attrib["year"] = "2023"
-print(yr92.attrib)
+# yr92 = root.find("./genre/decade/movie/[year='1992']")
+# #yr92.tag["year"] = "2023"
+# print(yr92.tag)
+# tree.write('movies92.xml')
+
+for movie in root.findall("./genre/decade/movie/[year='1992']"):
+    movie.find("year").text = "2023"
+    print(movie.find("year").text)
+
 tree.write('movies92.xml')

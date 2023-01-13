@@ -30,15 +30,15 @@
                <rating>PG-13</rating>
                <description>Two mutants come to a private academy for their kind whose resident superhero team must oppose a terrorist organization with similar powers.</description>
             </movie>
-            <movie favorite="True" title="Batman Returns" year="2023">
+            <movie favorite="True" title="Batman Returns">
                <format multiple="No">VHS</format>
-               <year>1992</year>
+               <year>2023</year>
                <rating>PG13</rating>
                <description>NA.</description>
             </movie>
                <movie favorite="False" title="Reservoir Dogs">
                <format multiple="No">Online</format>
-               <year>1992</year>
+               <year>2023</year>
                <rating>R</rating>
                <description>WhAtEvER I Want!!!?!</description>
             </movie>
