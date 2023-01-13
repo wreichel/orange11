@@ -34,7 +34,7 @@ root = tree.getroot()
 # tree.write('movies92.xml')
 
 for movie in root.findall("./genre/decade/movie/[year='1992']"):
-    movie.find("year").text = "2023"
+    movie.find("year").text = "2022"
     print(movie.find("year").text)
 
 tree.write('movies92.xml')
